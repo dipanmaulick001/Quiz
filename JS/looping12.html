@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a8da951f1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Caveat:wght@500&family=Edu+SA+Beginner:wght@700&family=Kanit&family=Mooli&family=Poppins:ital,wght@1,200&family=Roboto+Mono:wght@300&display=swap');
+    </style>
+    <title>Programming Java</title>
+    <link rel="stylesheet" href="./looping12.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js">
+
+
+    <script>
+        alert("Click ok to open the website");
+        function submit()
+        {
+            var n=parseInt(document.getElementById('num').value);
+            var c,m=0;
+            c=n*n;
+            while(n>0)
+            {
+                if(n%10!=c%10)
+			    {
+				    m=1;
+			    }
+			    n=parseInt(n/10);
+			    c=parseInt(c/10);
+            }
+            if(m==0)
+            {
+                document.getElementById('loop').value="Automorphic";
+            }
+            else
+            {
+                document.getElementById('loop').value="Not Automorphic";
+            }
+        }
+        function reset() {
+            document.getElementById('num').value = " ";
+            document.getElementById('loop').value = " ";
+        }
+    </script>
+
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-md back navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="lo.png" alt="logo" style="width:32px; margin-left: 170px;">
+        </a>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link menu" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu" href="./basic.html">Basic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu" href="./ifelse.html">If-Else</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu" href="./looping.html">Looping</a>
+                </li>
+                <li>
+                    <form class="form-inline" action="/action_page.php">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search"
+                            style="margin-left: 250px;">
+                        <button class="btn btn-warning button" type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="ban">
+        <div class="banrap">
+            <h1>Write a program to accept any number and check the number is automorphic or not</h1>
+            <div class="banrap1">
+                <h2>If you want to see this solution then click the button</h2>
+                <button id="imageButton">Open The Solution</button>
+                <div id="imagePopup" class="popup">
+                    <img src="./loop12.png" alt="Image">
+                    <span id="closeButton">x</span>
+                    <!-- <span id="close-btn" onclick="closePopup()">x</span> -->
+                </div>
+                <div class="box">
+                        <div class="value">
+                            <h3><input type="text" class="form-control" id="num" placeholder="Enter Any Number"></h3>
+                            <h3><input type="text" class="form-control" id="loop" placeholder="This is"></h3>
+                        </div>
+
+                    <input type="button" value="Submit" class="text_style3 btn btn-primary" id="btn" onclick="submit()">
+                    <input type="button" value="Clear" class="text_style3 btn btn-primary" id="btn1" onclick="reset()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const imageButton = document.getElementById("imageButton");
+        const imagePopup = document.getElementById("imagePopup");
+        const closeButton = document.getElementById("closeButton");
+
+        imageButton.addEventListener("click", () => {
+            imagePopup.style.display = "block";
+        });
+
+        closeButton.addEventListener("click", () => {
+            imagePopup.style.display = "none";
+        });
+    </script>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footerrap">
+            <div class="footerrap1">
+                <div class="box">
+                    <h2>@2023 Programming Java. ALL Rights Reserved</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

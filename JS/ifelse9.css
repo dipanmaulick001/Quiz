@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*navigation bar*/
+.back {
+    background-color: rgb(13,10,1);
+}
+
+.menu {
+    color: white !important;
+    font-weight: bold;
+    margin-right: 50px;
+    padding-left: 50px;
+}
+
+/*Banner*/
+.ban {
+    width: 100%;
+    height: 90vh;
+    background-image: url(./ban4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banrap {
+   
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.banrap h1 {
+    padding-top: 90px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+
+.banrap1 h2 {
+    color: white;
+    font-size: 20px;
+    /* padding-top: 10px; */
+    /* margin-left: 150px; */
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* right: 100%; */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.popup img {
+    max-width: 80%;
+    max-height: 80%;
+    margin: 5% auto;
+}
+
+.banrap button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    margin-left: 660px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: red;
+    background-color: rgb(244, 228, 180);
+    font-family: 'Kanit', sans-serif;
+}
+
+#closeButton {
+    position: absolute;
+    top: 80px;
+    right: 440px;
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.box h2 {
+    font-size: 40px;
+}
+
+.value h3 {
+    width: 23%;
+    padding: 20px;
+    margin-left: 570px;
+    color: red;
+}
+
+#btn {
+    width: 8%;
+    height: 5vh;
+    margin-left: 608px;
+    color: red;
+    background-color:  rgb(244, 228, 180);
+    font-weight: 800;
+    font-family: 'Kanit', sans-serif;
+}
+
+#btn1 {
+    width: 8%;
+    height: 5vh;
+    margin-left: 30px;
+    color: red;
+    background-color: rgb(244, 228, 180);
+    font-weight: 800;
+    font-family: 'Kanit', sans-serif;
+}
+/*footer*/
+.footer {
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(13,10,1);
+}
+
+.footerrap {
+    width: 80%;
+    margin: auto;
+}
+
+/* .footerrap1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+} */
+.box h2 {
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    margin-left: 50px;
+    padding-top: 17px;
+}
